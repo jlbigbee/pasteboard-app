@@ -16,18 +16,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eDr-it-xTw">
-                                <rect key="frame" x="0.0" y="59" width="393" height="662"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eDr-it-xTw">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civ</mutableString>
                                 <color key="textColor" systemColor="systemMintColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0tY-gU-q2A">
-                                <rect key="frame" x="0.0" y="774" width="393" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0tY-gU-q2A">
+                                <rect key="frame" x="0.0" y="769" width="393" height="49"/>
                                 <items>
                                     <barButtonItem systemItem="trash" id="Tvg-ys-hBA"/>
                                 </items>
@@ -35,6 +33,16 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0tY-gU-q2A" firstAttribute="top" secondItem="eDr-it-xTw" secondAttribute="bottom" id="GnH-bg-qOz"/>
+                            <constraint firstItem="0tY-gU-q2A" firstAttribute="top" secondItem="eDr-it-xTw" secondAttribute="bottom" id="Swx-c2-2cA"/>
+                            <constraint firstItem="0tY-gU-q2A" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="bHd-WZ-Qao"/>
+                            <constraint firstItem="eDr-it-xTw" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fIy-gV-B0R"/>
+                            <constraint firstItem="eDr-it-xTw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hhe-NV-iw7"/>
+                            <constraint firstItem="0tY-gU-q2A" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="jIl-Qk-d0f"/>
+                            <constraint firstItem="eDr-it-xTw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rkw-OP-rgl"/>
+                            <constraint firstItem="0tY-gU-q2A" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zOE-tv-rXd"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
