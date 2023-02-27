@@ -28,7 +28,10 @@ class ViewController: UIViewController {
     }
     
     func showText() {
-        
+        textView.text = ""
+        for str in pastedStrings {
+            textView.text.append("\(str)\n\n")
+        }
     }
     @IBAction func trashWasPressed(_ sender: Any) {
         
