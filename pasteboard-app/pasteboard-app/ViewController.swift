@@ -10,17 +10,25 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var textView: UITextView!
     
+    var pastedStrings: [String] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         showText()
     }
     
     func addText() {
+        
+        guard let text = UIPasteboard.general.string, !pastedStrings.contains(text) else
+        {
+            return
+        }
+        pastedStrings.append(text)
         showText() 
     }
     
     func showText() {
-        textView.text = UIPasteboard.general.string
+        
     }
     @IBAction func trashWasPressed(_ sender: Any) {
         
